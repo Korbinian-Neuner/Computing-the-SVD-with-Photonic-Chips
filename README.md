@@ -3,39 +3,25 @@ Related code for the Paper "Computing the SVD with photonic chips"
 
 The code base consists of two main parts: The Java code implementing the operations counter and the python code used for rum time comparisons and creation of all plots
 
+## Java
 
 
+## Python
 
+### grksvd.py
+This script implements the GRK-SVD algorithm explicitly including the convergence checks omitted in the Java version.
+Utilizes block deflation.
+Supports optional U/V computation, singular value sorting, and convergence tracking.
 
+### svdviaqr.py
+Implements the QR-SVD algorithm. Includes a custom QR factorization with Householder reflections and utilities to measure matrix diagonality.
 
-## SVD.py
+### data.py
+Creates the datasets 'GRKData.text', 'AltQRData.txt' and 'svd_timings750.txt'.
 
-This script implements the GRK - algorithm explicitly including the convergence checks omitted in the Java version.
+### plots.py
+Draws all plots from the paper. Includes functions returning runtime and energy estimates using the operation counts.
+Relative time and energy costs of operation can easily be adjusted. Also includes convergence tracking of bot GRK-SVD and QR-SVD
 
-Given a matrix \( A \in \mathbb{R}^{m \times n} \), it computes:
-
-\[
-A = U \Sigma V^T
-\]
-
-using the following steps:
-
-1. **Bidiagonalization** via Householder reflections  
-2. **Implicit shifted QR iteration** (Wilkinson shift + Givens rotations)  
-3. **Deflation and block splitting** for efficiency  
-4. **Explicit reconstruction** of \( U \) and \( V \)
-
-### Features
-
-- Manual implementation of GRK SVD  
-- Optional computation of `U` and/or `V`  
-- Recursive block processing using a queue
-- Singular value sorting and sign correction  
-- Tracking Convergence behaviour during iterations 
-
-
-
-Final reconstruction:
-U = P · accumulated_left_rotations
-V = accumulated_right_rotations · Q
+## Data
 
