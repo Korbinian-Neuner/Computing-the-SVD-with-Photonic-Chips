@@ -86,10 +86,12 @@ Datasets requiring a lot of time to generate. Format is as follows:
 4. End of line. Next line has next size of test matrices
 
 `timecheckGRK.txt` Runtimes for the Java implementation of GRK-SVD D-SC (in ms)
+
 `timecheckQR.txt` Runtimes for the Java implementation of QR-SVD D-SC (in ms)
 These two are used in Figure 8
 
 `GRKData.txt` Number of iterations needed by GRK-SVD in the qr-iteration step to converge to within 1e-6
+
 `AltQRData.txt` Number of iterations needed by QR-SVD to converge to within 1e-6
 These two are used in Figure 4
 
