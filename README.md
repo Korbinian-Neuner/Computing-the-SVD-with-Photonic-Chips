@@ -27,11 +27,11 @@ using the following steps:
 
 ### Features
 
-- Manual implementation of Golub–Kahan-style SVD  
+- Manual implementation of GRK SVD  
 - Optional computation of `U` and/or `V`  
-- Recursive block processing  
+- Recursive block processing using a queue
 - Singular value sorting and sign correction  
-- Iteration diagnostics available  
+- Tracking Convergence behaviour during iterations 
 
 
 
