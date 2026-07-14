@@ -500,7 +500,7 @@ def plotGRKSVDconvergence(size,minIterations, maxIterations):
         if i % 20 == 0:
             print(i)
         matrix = np.random.rand(size, size)
-        U, iterations, errors = svd.svd(matrix)
+        U, iterations, errors = grksvd.svd(matrix)
         errors.append(1e-6)
         
         for j in range(len(errors), maxIterations):
