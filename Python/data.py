@@ -72,7 +72,7 @@ def SizeDependencyGRK(minSize, maxSize, iterationsPerSize):
             
             data = []
             for matrix in test_matrices:
-                svds, iterations = svd.svd(matrix, False, False, 100000)
+                svds, iterations = grksvd.svd(matrix, False, False, 100000)
                 data.append(iterations)
                 
             data.sort()
