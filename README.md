@@ -77,6 +77,7 @@ Creates the datasets 'GRKData.text', 'AltQRData.txt' and 'svd_timings750.txt'.
 ### plots.py
 Draws all plots from the paper. Includes functions returning runtime and energy estimates using the operation counts.
 Relative time and energy costs of operation can easily be adjusted. Also includes convergence tracking of bot GRK-SVD and QR-SVD
+NOTE THAT IT EXPECTS THE REQUIRED DATASETS TO BE IN THE SAME DIRECTORY AS THIS SCRIPT!
 
 ## Data
 Datasets requiring a lot of time to generate. Format is as follows:
