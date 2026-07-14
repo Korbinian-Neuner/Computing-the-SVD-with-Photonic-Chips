@@ -389,6 +389,7 @@ def plot1():
     )
   
     plt.savefig("plot1loglog.pdf", bbox_inches="tight")
+    plt.show()
     plt.close('all')
     
 def plot2():
@@ -423,6 +424,7 @@ def plot2():
     )
         
     plt.savefig("plot2loglog.pdf", bbox_inches="tight")
+    plt.show()
     plt.close('all')
 
 
@@ -458,6 +460,7 @@ def plot3():
     )
         
     plt.savefig("plot3loglog.pdf", bbox_inches="tight")
+    plt.show()
     plt.close('all')
     
 def plot4():
@@ -491,6 +494,7 @@ def plot4():
     )
     
     plt.savefig("plot4loglog.pdf", bbox_inches="tight")
+    plt.show()
     plt.close('all')
 
 
