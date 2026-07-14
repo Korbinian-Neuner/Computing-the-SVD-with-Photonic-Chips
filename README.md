@@ -1,5 +1,5 @@
 # Computing-the-SVD-with-Photonic-Chips
-Related code and data for the Paper "Computing the SVD with photonic chips" by Johannes Maly, Korbinian Neuner and Samarth Vadia
+Related code and data for the Paper "Efficient computation of the singular value decomposition with linear photonic circuits" by Johannes Maly, Korbinian Neuner and Samarth Vadia
 
 The code base consists of two main parts: The Java code implementing the operations counter and the python code used for runtime comparisons and creation of all plots.
 
